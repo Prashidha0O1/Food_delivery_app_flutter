@@ -612,6 +612,10 @@ class IndividualItem extends StatelessWidget {
   }
 }
 
+ClipShadow({required CustomTriangle clipper, required List<BoxShadow> boxShadow, required Container child}) {
+}
+
+
 class CustomTriangle extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {

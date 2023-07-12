@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Good morning Akila!",
+                          "Good morning Test_user!",
                           style: Helper.getTheme(context).headline5,
                         ),
                         Image.asset(Helper.getAssetName("cart.png", "virtual"))
@@ -103,7 +103,7 @@ class HomeScreen extends StatelessWidget {
                               Helper.getAssetName("rice2.jpg", "real"),
                               fit: BoxFit.cover,
                             ),
-                            name: "Sri Lankan",
+                            name: "Nepali",
                           ),
                           SizedBox(
                             width: 10,
@@ -113,7 +113,7 @@ class HomeScreen extends StatelessWidget {
                               Helper.getAssetName("fruit.jpg", "real"),
                               fit: BoxFit.cover,
                             ),
-                            name: "Italian",
+                            name: "Indian",
                           ),
                           SizedBox(
                             width: 10,
@@ -123,7 +123,7 @@ class HomeScreen extends StatelessWidget {
                               Helper.getAssetName("rice.jpg", "real"),
                               fit: BoxFit.cover,
                             ),
-                            name: "Indian",
+                            name: "Italian",
                           ),
                           SizedBox(
                             width: 10,
@@ -156,21 +156,21 @@ class HomeScreen extends StatelessWidget {
                       Helper.getAssetName("pizza2.jpg", "real"),
                       fit: BoxFit.cover,
                     ),
-                    name: "Minute by tuk tuk",
+                    name: "Mitho Thakali",
                   ),
                   RestaurantCard(
                     image: Image.asset(
                       Helper.getAssetName("breakfast.jpg", "real"),
                       fit: BoxFit.cover,
                     ),
-                    name: "Cafe de Noir",
+                    name: "Cafe Myt",
                   ),
                   RestaurantCard(
                     image: Image.asset(
                       Helper.getAssetName("bakery.jpg", "real"),
                       fit: BoxFit.cover,
                     ),
-                    name: "Bakes by Tella",
+                    name: "UG Cakes",
                   ),
                   SizedBox(
                     height: 50,
@@ -207,13 +207,13 @@ class HomeScreen extends StatelessWidget {
                               Helper.getAssetName("pizza4.jpg", "real"),
                               fit: BoxFit.cover,
                             ),
-                            name: "Cafe De Bambaa",
+                            name: "Pepe Pizza",
                           ),
                           SizedBox(
                             width: 30,
                           ),
                           MostPopularCard(
-                            name: "Burger by Bella",
+                            name: "Kings Burger",
                             image: Image.asset(
                               Helper.getAssetName("dessert3.jpg", "real"),
                               fit: BoxFit.cover,
