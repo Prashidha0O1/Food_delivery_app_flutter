@@ -564,29 +564,28 @@ class IndividualItem extends StatelessWidget {
                                   ),
                                   child: Align(
                                     alignment: Alignment.topRight,
-                                    child: ClipShadow(
-                                      clipper: CustomTriangle(),
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: AppColor.placeholder,
-                                          offset: Offset(0, 5),
-                                          blurRadius: 5,
-                                        ),
-                                      ],
-                                      child: Container(
-                                        width: 60,
-                                        height: 60,
+                                    child: Container(
+                                      width: 60,
+                                      height: 60,
+                                      decoration: BoxDecoration(
                                         color: Colors.white,
-                                        child: Image.asset(
-                                          Helper.getAssetName(
-                                            "fav_filled.png",
-                                            "virtual",
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: AppColor.placeholder,
+                                            offset: Offset(0, 5),
+                                            blurRadius: 5,
                                           ),
+                                        ],
+                                      ),
+                                      child: Image.asset(
+                                        Helper.getAssetName(
+                                          "fav_filled.png",
+                                          "virtual",
                                         ),
                                       ),
                                     ),
                                   ),
-                                )
+                                ),
                               ],
                             ),
                           ),
@@ -611,10 +610,6 @@ class IndividualItem extends StatelessWidget {
     );
   }
 }
-
-ClipShadow({required CustomTriangle clipper, required List<BoxShadow> boxShadow, required Container child}) {
-}
-
 
 class CustomTriangle extends CustomClipper<Path> {
   @override
